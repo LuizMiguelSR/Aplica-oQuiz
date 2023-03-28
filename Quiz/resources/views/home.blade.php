@@ -24,5 +24,15 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="container">
+                <div class="imagem">
+                    <a href="{{ route('playlists.create') }}">
+                        <img src="{{ asset('imagens/playlist.png') }}" alt="Registrar Container" title="Registrar Container">
+                        <h6 class="menu">Batalhar</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
 </section>

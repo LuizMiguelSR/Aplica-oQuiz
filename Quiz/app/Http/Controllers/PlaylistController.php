@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Playlist;
+use App\Models\Musica;
 
 class PlaylistController extends Controller
 {
@@ -18,8 +19,8 @@ class PlaylistController extends Controller
             'nome_playlist' => 'rquired|max:50',
         ]);
         foreach ($request->playlist_urls as $url) {
-            $music = new Music;
-            $music->url = $url;
+            $music = new Musica;
+            $music->url_musica = $url;
             $music->playlist_id = $playlist->id;
             $music->save();
         }
